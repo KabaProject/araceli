@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/patron.png);
+}
+
+.card__wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, rgba(222, 156, 44, 0.9) 0, rgba(229, 146, 42, 0.9) 8.33%, rgba(234, 133, 43, 0.9) 16.67%, rgba(238, 119, 45, 0.9) 25%, rgba(241, 103, 49, 0.9) 33.33%, rgba(243, 84, 54, 0.9) 41.67%, rgba(242, 60, 60, 0.9) 50%, rgba(240, 24, 67, 0.9) 58.33%, rgba(237, 0, 76, 0.9) 66.67%, rgba(233, 0, 87, 0.9) 75%, rgba(227, 0, 100, 0.9) 83.33%, rgba(219, 0, 113, 0.9) 91.67%, rgba(209, 0, 128, 0.9) 100%);
+}
+
+.card__wrapper_inverse{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-45deg, rgba(222, 156, 44, 0.9) 0, rgba(229, 146, 42, 0.9) 8.33%, rgba(234, 133, 43, 0.9) 16.67%, rgba(238, 119, 45, 0.9) 25%, rgba(241, 103, 49, 0.9) 33.33%, rgba(243, 84, 54, 0.9) 41.67%, rgba(242, 60, 60, 0.9) 50%, rgba(240, 24, 67, 0.9) 58.33%, rgba(237, 0, 76, 0.9) 66.67%, rgba(233, 0, 87, 0.9) 75%, rgba(227, 0, 100, 0.9) 83.33%, rgba(219, 0, 113, 0.9) 91.67%, rgba(209, 0, 128, 0.9) 100%);
+}
+
+.card__text{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.card__header{
+    text-align: center;
+    font-size: 8rem;
+    color: white;
+    line-height: 8rem;
+    margin-bottom: 3rem;
+}
+
+#switch-letters{
+    cursor: pointer;
+}
+
+.card__subtext{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media only screen and (max-width: 768px){
+    .card__header{
+        font-size: 6rem;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.slide-card{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-card__wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 120px 750px auto;
+    align-content: center;
+    grid-template-areas: ". texto .";
+    background-color: rgba(20, 20, 20, 0.7);
+}
+
+.slide-card__text{
+    grid-area: texto;
+    color: white;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px){
+    .slide-card__wrapper{
+        grid-template-columns: auto;
+        grid-template-areas: "texto";
+        padding: 20px;
+    }
+
+    .slide-card__text{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+.gif-go-away{
+    background-image: url(https://media.giphy.com/media/l0HlMSVVw9zqmClLq/source.gif);
+}
+
+.gif-meet-u{
+    background-image: url(https://media.giphy.com/media/3o7aDbC2HZbTdx0556/source.gif);
+}
+
+.gif-friends{
+    background-image: url(https://media.giphy.com/media/A7Gpt39kH5sAg/source.gif);
+}
+
+.gif-hit{
+    background-image: url(https://media.giphy.com/media/AisOYaOZdrS1i/source.gif);
+}
+
+.gif-heart-fingers{
+    background-image: url(https://media.giphy.com/media/x5B7HA9Uz4lyw/source.gif);
+}
+
+.gif-party{
+    background-image: url(https://media.giphy.com/media/MvgZsMTlbRsPe/source.gif);
+}
+
+.gif-bye{
+    background-image: url(https://media.giphy.com/media/14p0yNxLIwu7Bu/source.gif);
+}
+
+@media only screen and (max-width: 768px){
+    .gif-go-away{
+        background-image: url(https://media.giphy.com/media/d6Ni9aqSatPfq/source.gif);
+    }
+    
+    .gif-meet-u{
+        background-image: url(https://media.giphy.com/media/ZbekHqvSa91633c6u1/source.gif);
+    }
+    
+    .gif-friends{
+        background-image: url(https://media.giphy.com/media/ESiUPDVrJoRfq/source.gif);
+    }
+    
+    .gif-hit{
+        background-image: url(https://media.giphy.com/media/4GWh1lkk0Lwx0gNOjc/source.gif);
+    }
+    
+    .gif-heart-fingers{
+        background-image: url(https://media.giphy.com/media/L3uhZl8JfoYOYGoUg6/source.gif);
+    }
+    .gif-party{
+        background-image: url(https://media.giphy.com/media/xT8qAY7e9If38xkrIY/source.gif);
+    }
+
+    .gif-bye{
+        background-image: url(https://media.giphy.com/media/cdNSp4L5vCU7aQrYnV/source.gif);
+    }
+    
+}
